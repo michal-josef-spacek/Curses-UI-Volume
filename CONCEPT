@@ -1,0 +1,24 @@
+CONCEPT
+=======
+Volume widget.
+
+[40] < ▉▉▌     >
+ ^
+(0-100%)
+     ^
+    down volume
+        ^
+       progress bar
+               ^
+              up volume
+
+Unicode characters
+------------------
+█ 2588 FULL BLOCK 
+▉ 2589 LEFT SEVEN EIGHTHS BLOCK
+▊ 258A LEFT THREE QUARTERS BLOCK
+▋ 258B LEFT FIVE EIGHTHS BLOCK
+▌ 258C LEFT HALF BLOCK
+▍ 258D LEFT THREE EIGHTHS BLOCK
+▎ 258E LEFT ONE QUARTER BLOCK
+▏ 258F LEFT ONE EIGHTH BLOCK 
