@@ -173,8 +173,8 @@ C<-text>.
 
 =item * C<-volume> < PERCENT_NUMBER >
 
-If PERCENT_NUMBER is set, text on the label will be drawn as volume level for
-this percent number.
+ If PERCENT_NUMBER is set, text on the label will be drawn as volume level for this percent number.
+ Default value is 0.
 
 =back
 

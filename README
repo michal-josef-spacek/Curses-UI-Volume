@@ -48,8 +48,8 @@ WIDGET-SPECIFIC OPTIONS
 
     *       "-volume" < PERCENT_NUMBER >
 
-            If PERCENT_NUMBER is set, text on the label will be drawn as
-            volume level for this percent number.
+             If PERCENT_NUMBER is set, text on the label will be drawn as volume level for this percent number.
+             Default value is 0.
 
 STANDARD METHODS
     "layout", "draw", "intellidraw", "focus", "onFocus", "onBlur".
