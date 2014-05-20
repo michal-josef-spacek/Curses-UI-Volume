@@ -45,6 +45,9 @@ sub new {
 		$args{'-width'} = width_by_windowscrwidth(3, %args);
 	}
 
+	# Check volume.
+	$args{'-volume'} = _check_volume($args{'-volume'});
+
 	# Create the widget.
 	my $self = $class->SUPER::new(%args);
 
@@ -74,10 +77,26 @@ sub new {
 sub volume {
 	my ($self, $volume) = @_;
 	if (defined $volume) {
+		$volume = _check_volume($volume);
 		$self->{'-volume'} = $volume;
 		$self->getobj('volume')->text($self->_volume($volume));
 	}
 	return $self->{'-volume'};
+}
+
+# Check volume.
+sub _check_volume {
+	my $volume = shift;
+	if (int($volume) != $volume) {
+		$volume = 0;
+	}
+	if ($volume > 100) {
+		$volume = 100;
+	}
+	if ($volume < 0) {
+		$volume = 0;
+	}
+	return $volume;	
 }
 
 # Set text label.
@@ -174,6 +193,7 @@ C<-text>.
 =item * C<-volume> < PERCENT_NUMBER >
 
  If PERCENT_NUMBER is set, text on the label will be drawn as volume level for this percent number.
+ Volume number is checked for 0 - 100% value.
  Default value is 0.
 
 =back
@@ -198,6 +218,7 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
 =item * C<volume([$volume])>
 
  Get or set volume number.
+ In set mode volume number is checked for 0 - 100% value.
  Returns volume number (0-100%).
 
 =back

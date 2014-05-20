@@ -49,6 +49,7 @@ WIDGET-SPECIFIC OPTIONS
     *       "-volume" < PERCENT_NUMBER >
 
              If PERCENT_NUMBER is set, text on the label will be drawn as volume level for this percent number.
+             Volume number is checked for 0 - 100% value.
              Default value is 0.
 
 STANDARD METHODS
@@ -66,6 +67,7 @@ WIDGET-SPECIFIC METHODS
     *       "volume([$volume])"
 
              Get or set volume number.
+             In set mode volume number is checked for 0 - 100% value.
              Returns volume number (0-100%).
 
 EXAMPLE1
