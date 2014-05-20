@@ -137,7 +137,7 @@ Curses::UI::Volume - Create and manipulate volume widgets.
 
 =head1 DESCRIPTION
 
-Curses::UI::Volume is a widget that shows a volume stay in graphic form.
+Curses::UI::Volume is a widget that shows a volume number in graphic form.
 Precision is 8 stay in one character.
 
 =head1 STANDARD OPTIONS
@@ -192,13 +192,13 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
 =item * C<new(%parameters)>
 
  Constructor.
- Create widget with volume in graphic form, defined by -volume stay.
+ Create widget with volume in graphic form, defined by -volume number.
  Returns object.
 
 =item * C<volume([$volume])>
 
- Get or set volume stay.
- Returns volume stay (0-100%).
+ Get or set volume number.
+ Returns volume number (0-100%).
 
 =back
 
