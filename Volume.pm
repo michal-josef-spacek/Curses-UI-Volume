@@ -31,9 +31,9 @@ sub new {
 	my ($class, %userargs) = @_;
 	keys_to_lowercase(\%userargs);
 	my %args = (
-		'-volume' => 0,
-		'-fg' => 'white',
 		'-bg' => 'black',
+		'-fg' => 'white',
+		'-volume' => 0,
 		%userargs,
 		'-volume_width' => undef,
 		'-focusable' => 0,
