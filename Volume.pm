@@ -107,3 +107,194 @@ sub _volume {
 }
 
 1;
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Curses::UI::Volume - Create and manipulate volume widgets.
+
+=head1 CLASS HIERARCHY
+
+ Curses::UI::Containter
+ Curses::UI::Widget
+    |
+    +----Curses::UI::ContainerWidget
+            |
+            +----Curses::UI::Volume
+
+=head1 SYNOPSIS
+
+ use Curses::UI;
+ my $win = $cui->add('window_id', 'Window');
+ my $volume = $win->add(
+         'myvolume', 'Curses::UI::Volume',
+         -volume => 50,
+ );
+ $volume->draw;
+
+=head1 DESCRIPTION
+
+Curses::UI::Volume is a widget that shows a volume stay in graphic form.
+Precision is 8 stay in one character.
+
+=head1 STANDARD OPTIONS
+
+C<-parent>, C<-x>, C<-y>, C<-width>, C<-height>, 
+C<-pad>, C<-padleft>, C<-padright>, C<-padtop>, C<-padbottom>,
+C<-ipad>, C<-ipadleft>, C<-ipadright>, C<-ipadtop>, C<-ipadbottom>,
+C<-title>, C<-titlefullwidth>, C<-titlereverse>, C<-onfocus>,
+C<-onblur>.
+
+For an explanation of these standard options, see 
+L<Curses::UI::Widget|Curses::UI::Widget>.
+
+=head1 REMOVED OPTIONS
+
+C<-text>.
+
+=head1 WIDGET-SPECIFIC OPTIONS
+
+=over 8
+
+=item * C<-volume> < PERCENT_NUMBER >
+
+If PERCENT_NUMBER is set, text on the label will be drawn as volume level for
+this percent number.
+
+=back
+
+=head1 STANDARD METHODS
+
+C<layout>, C<draw>, C<intellidraw>, C<focus>, C<onFocus>, C<onBlur>.
+
+For an explanation of these standard methods, see
+L<Curses::UI::Widget|Curses::UI::Widget>.
+
+=head1 WIDGET-SPECIFIC METHODS
+
+=over 8
+
+=item * C<new(%parameters)>
+
+ Constructor.
+ Create widget with volume in graphic form, defined by -volume stay.
+ Returns object.
+
+=item * C<volume([$volume])>
+
+ Get or set volume stay.
+ Returns volume stay (0-100%).
+
+=back
+
+=head1 EXAMPLE1
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Curses::UI;
+
+ # Object.
+ my $cui = Curses::UI->new;
+ 
+ # Main window.
+ my $win = $cui->add('window_id', 'Window');
+ 
+ # Add volume.
+ $win->add(
+         undef, 'Curses::UI::Volume',
+         '-volume' => 50,
+ );
+ 
+ # Binding for quit.
+ $win->set_binding(\&exit, "\cQ", "\cC");
+ 
+ # Loop.
+ $cui->mainloop;
+
+=head1 EXAMPLE2
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Curses::UI;
+
+ # Object.
+ my $cui = Curses::UI->new(
+         -color_support => 1,
+ );
+ 
+ # Main window.
+ my $win = $cui->add('window_id', 'Window');
+
+ # Add volume.
+ my $vol = $win->add(
+         undef, 'Curses::UI::Volume',
+         '-border' => 1,
+         '-volume' => 0,
+         '-title' => 'foo',
+         '-width' => 10,
+ );
+ 
+ # Binding for quit.
+ $win->set_binding(\&exit, "\cQ", "\cC");
+
+ # Time.
+ $cui->set_timer(
+         'timer',
+         sub {
+                 my $act = $vol->volume;
+                 $act += 5;
+                 if ($act > 100) {
+                         $act = 0;
+                 }
+                 $vol->volume($act);
+                 return;
+         },
+         1,
+ );
+ 
+ # Loop.
+ $cui->mainloop;
+
+=head1 DEPENDENCIES
+
+L<Curses>,
+L<Curses::UI::Common>,
+L<Curses::UI::ContainerWidget>,
+L<Curses::UI::Label>,
+L<Curses::UI::Widget>,
+L<Encode>,
+L<Readonly>.
+
+=head1 SEE ALSO
+
+L<Curses::UI>,
+L<Curses::UI::Widget>.
+
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/Curses-UI-Volume>
+
+=head1 AUTHOR
+
+Michal Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
+
+=head1 VERSION
+
+0.01
+
+=cut

@@ -1,0 +1,151 @@
+NAME
+    Curses::UI::Volume - Create and manipulate volume widgets.
+
+CLASS HIERARCHY
+     Curses::UI::Containter
+     Curses::UI::Widget
+        |
+        +----Curses::UI::ContainerWidget
+                |
+                +----Curses::UI::Volume
+
+SYNOPSIS
+     use Curses::UI;
+     my $win = $cui->add('window_id', 'Window');
+     my $volume = $win->add(
+             'myvolume', 'Curses::UI::Volume',
+             -volume => 50,
+     );
+     $volume->draw;
+
+DESCRIPTION
+    Curses::UI::Volume is a widget that shows a volume stay in graphic form.
+    Precision is 8 stay in one character.
+
+STANDARD OPTIONS
+    "-parent", "-x", "-y", "-width", "-height", "-pad", "-padleft",
+    "-padright", "-padtop", "-padbottom", "-ipad", "-ipadleft",
+    "-ipadright", "-ipadtop", "-ipadbottom", "-title", "-titlefullwidth",
+    "-titlereverse", "-onfocus", "-onblur".
+
+    For an explanation of these standard options, see Curses::UI::Widget.
+
+REMOVED OPTIONS
+    "-text".
+
+WIDGET-SPECIFIC OPTIONS
+    *       "-volume" < PERCENT_NUMBER >
+
+            If PERCENT_NUMBER is set, text on the label will be drawn as
+            volume level for this percent number.
+
+STANDARD METHODS
+    "layout", "draw", "intellidraw", "focus", "onFocus", "onBlur".
+
+    For an explanation of these standard methods, see Curses::UI::Widget.
+
+WIDGET-SPECIFIC METHODS
+    *       "new(%parameters)"
+
+             Constructor.
+             Create widget with volume in graphic form, defined by -volume stay.
+             Returns object.
+
+    *       "volume([$volume])"
+
+             Get or set volume stay.
+             Returns volume stay (0-100%).
+
+EXAMPLE1
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Curses::UI;
+
+     # Object.
+     my $cui = Curses::UI->new;
+ 
+     # Main window.
+     my $win = $cui->add('window_id', 'Window');
+ 
+     # Add volume.
+     $win->add(
+             undef, 'Curses::UI::Volume',
+             '-volume' => 50,
+     );
+ 
+     # Binding for quit.
+     $win->set_binding(\&exit, "\cQ", "\cC");
+ 
+     # Loop.
+     $cui->mainloop;
+
+EXAMPLE2
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Curses::UI;
+
+     # Object.
+     my $cui = Curses::UI->new(
+             -color_support => 1,
+     );
+ 
+     # Main window.
+     my $win = $cui->add('window_id', 'Window');
+
+     # Add volume.
+     my $vol = $win->add(
+             undef, 'Curses::UI::Volume',
+             '-border' => 1,
+             '-volume' => 0,
+             '-title' => 'foo',
+             '-width' => 10,
+     );
+ 
+     # Binding for quit.
+     $win->set_binding(\&exit, "\cQ", "\cC");
+
+     # Time.
+     $cui->set_timer(
+             'timer',
+             sub {
+                     my $act = $vol->volume;
+                     $act += 5;
+                     if ($act > 100) {
+                             $act = 0;
+                     }
+                     $vol->volume($act);
+                     return;
+             },
+             1,
+     );
+ 
+     # Loop.
+     $cui->mainloop;
+
+DEPENDENCIES
+    Curses, Curses::UI::Common, Curses::UI::ContainerWidget,
+    Curses::UI::Label, Curses::UI::Widget, Encode, Readonly.
+
+SEE ALSO
+    Curses::UI, Curses::UI::Widget.
+
+REPOSITORY
+    <https://github.com/tupinek/Curses-UI-Volume>
+
+AUTHOR
+    Michal Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    BSD license.
+
+VERSION
+    0.01
+

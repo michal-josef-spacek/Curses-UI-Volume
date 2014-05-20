@@ -1,7 +1,6 @@
 TODO
 ====
 3. Pridat posuvniky.
-4. Dokumentace.
 5. Resit situaci, kdy neni unicode? Slo by redukovat na normalni progress bar.
 6.
 
@@ -12,4 +11,7 @@ OK [20140503] skim
 
 2. Vykresleni widgetu s -volume => 100 vykresli na konci $, ze to presahuje
    delku.
+OK [20140520] skim
+
+4. Dokumentace.
 OK [20140520] skim
