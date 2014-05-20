@@ -20,7 +20,7 @@ SYNOPSIS
 
 DESCRIPTION
     Curses::UI::Volume is a widget that shows a volume number in graphic
-    form. Precision is 8 stay in one character.
+    form. Precision is 8 stays in one character.
 
 STANDARD OPTIONS
     "-parent", "-x", "-y", "-width", "-height", "-pad", "-padleft",

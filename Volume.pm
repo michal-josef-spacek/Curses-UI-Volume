@@ -157,7 +157,7 @@ Curses::UI::Volume - Create and manipulate volume widgets.
 =head1 DESCRIPTION
 
 Curses::UI::Volume is a widget that shows a volume number in graphic form.
-Precision is 8 stay in one character.
+Precision is 8 stays in one character.
 
 =head1 STANDARD OPTIONS
 
