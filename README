@@ -34,6 +34,18 @@ REMOVED OPTIONS
     "-text".
 
 WIDGET-SPECIFIC OPTIONS
+    *       "-bg" < COLOR >
+
+             Background color.
+             Possible values are defined in Curses::UI::Color.
+             Default value is 'black'.
+
+    *       "-fg" < COLOR >
+
+             Foreground color.
+             Possible values are defined in Curses::UI::Color.
+             Default value is 'white'.
+
     *       "-volume" < PERCENT_NUMBER >
 
             If PERCENT_NUMBER is set, text on the label will be drawn as

@@ -159,6 +159,18 @@ C<-text>.
 
 =over 8
 
+=item * C<-bg> < COLOR >
+
+ Background color.
+ Possible values are defined in Curses::UI::Color.
+ Default value is 'black'.
+
+=item * C<-fg> < COLOR >
+
+ Foreground color.
+ Possible values are defined in Curses::UI::Color.
+ Default value is 'white'.
+
 =item * C<-volume> < PERCENT_NUMBER >
 
 If PERCENT_NUMBER is set, text on the label will be drawn as volume level for
