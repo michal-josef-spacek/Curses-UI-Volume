@@ -21,6 +21,7 @@ meta-spec:
 name: Curses-UI-Volume
 no_index:
   directory:
+    - examples
     - inc
     - t
 resources:
