@@ -54,7 +54,7 @@ sub new {
 		$self->{'-volume_width'} -= 2;
 	}
 
-	# Adapter widget.
+	# Main volume.
 	$self->add(
 		'volume', 'Label',
 		'-bg' => $self->{'-bg'},
