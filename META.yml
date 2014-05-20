@@ -24,6 +24,10 @@ no_index:
     - examples
     - inc
     - t
+requires:
+  Curses: 0
+  Encode: 0
+  Readonly: 0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Curses-UI-Volume
   homepage: https://github.com/tupinek/Curses-UI-Volume
