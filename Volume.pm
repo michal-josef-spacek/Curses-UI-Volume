@@ -60,7 +60,7 @@ sub new {
 		'-bg' => $self->{'-bg'},
 		'-fg' => $self->{'-fg'},
 		'-text' => $self->_volume($self->{'-volume'}),
-		'-width' => $args{'-width'} - 1,
+		'-width' => $args{'-width'},
 	);
 
 	# Layout.

@@ -1,7 +1,5 @@
 TODO
 ====
-2. Vykresleni widgetu s -volume => 100 vykresli na konci $, ze to presahuje
-   delku.
 3. Pridat posuvniky.
 4.
 
@@ -9,3 +7,7 @@ Applied
 =======
 1. Prvni verze.
 OK [20140503] skim
+
+2. Vykresleni widgetu s -volume => 100 vykresli na konci $, ze to presahuje
+   delku.
+OK [20140520] skim
