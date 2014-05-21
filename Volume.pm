@@ -96,7 +96,7 @@ sub _check_volume {
 	if ($volume < 0) {
 		$volume = 0;
 	}
-	return $volume;	
+	return $volume;
 }
 
 # Set text label.
@@ -161,13 +161,13 @@ Precision is 8 stays in one character.
 
 =head1 STANDARD OPTIONS
 
-C<-parent>, C<-x>, C<-y>, C<-width>, C<-height>, 
+C<-parent>, C<-x>, C<-y>, C<-width>, C<-height>,
 C<-pad>, C<-padleft>, C<-padright>, C<-padtop>, C<-padbottom>,
 C<-ipad>, C<-ipadleft>, C<-ipadright>, C<-ipadtop>, C<-ipadbottom>,
 C<-title>, C<-titlefullwidth>, C<-titlereverse>, C<-onfocus>,
 C<-onblur>.
 
-For an explanation of these standard options, see 
+For an explanation of these standard options, see
 L<Curses::UI::Widget|Curses::UI::Widget>.
 
 =head1 REMOVED OPTIONS
@@ -234,19 +234,19 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
 
  # Object.
  my $cui = Curses::UI->new;
- 
+
  # Main window.
  my $win = $cui->add('window_id', 'Window');
- 
+
  # Add volume.
  $win->add(
          undef, 'Curses::UI::Volume',
          '-volume' => 50,
  );
- 
+
  # Binding for quit.
  $win->set_binding(\&exit, "\cQ", "\cC");
- 
+
  # Loop.
  $cui->mainloop;
 
@@ -263,7 +263,7 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
  my $cui = Curses::UI->new(
          -color_support => 1,
  );
- 
+
  # Main window.
  my $win = $cui->add('window_id', 'Window');
 
@@ -275,7 +275,7 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
          '-title' => 'foo',
          '-width' => 10,
  );
- 
+
  # Binding for quit.
  $win->set_binding(\&exit, "\cQ", "\cC");
 
@@ -293,7 +293,7 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
          },
          1,
  );
- 
+
  # Loop.
  $cui->mainloop;
 
