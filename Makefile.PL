@@ -11,7 +11,7 @@ author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Curses-UI-Volume';
 readme_from 'Volume.pm';
-requires 'Curses' => 0;
+requires 'Curses::UI' => 0;
 requires 'Encode' => 0;
 requires 'Readonly' => 0;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
