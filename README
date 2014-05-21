@@ -80,19 +80,19 @@ EXAMPLE1
 
      # Object.
      my $cui = Curses::UI->new;
- 
+
      # Main window.
      my $win = $cui->add('window_id', 'Window');
- 
+
      # Add volume.
      $win->add(
              undef, 'Curses::UI::Volume',
              '-volume' => 50,
      );
- 
+
      # Binding for quit.
      $win->set_binding(\&exit, "\cQ", "\cC");
- 
+
      # Loop.
      $cui->mainloop;
 
@@ -108,7 +108,7 @@ EXAMPLE2
      my $cui = Curses::UI->new(
              -color_support => 1,
      );
- 
+
      # Main window.
      my $win = $cui->add('window_id', 'Window');
 
@@ -120,7 +120,7 @@ EXAMPLE2
              '-title' => 'foo',
              '-width' => 10,
      );
- 
+
      # Binding for quit.
      $win->set_binding(\&exit, "\cQ", "\cC");
 
@@ -138,7 +138,7 @@ EXAMPLE2
              },
              1,
      );
- 
+
      # Loop.
      $cui->mainloop;
 
