@@ -127,6 +127,8 @@ sub _volume {
 
 1;
 
+__END__
+
 =pod
 
 =encoding utf8
