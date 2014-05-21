@@ -19,6 +19,7 @@ resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 resources 'homepage' => 'https://github.com/tupinek/Curses-UI-Volume';
 resources 'repository' => 'git://github.com/tupinek/Curses-UI-Volume';
 test_requires 'English' => 0;
+test_requires 'File::Object' => 0.08;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 test_requires 'Test::Pod' => 0;
