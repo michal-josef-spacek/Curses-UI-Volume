@@ -96,6 +96,9 @@ EXAMPLE1
      # Loop.
      $cui->mainloop;
 
+     # Output like:
+     # █▌
+
 EXAMPLE2
      # Pragmas.
      use strict;
@@ -141,6 +144,11 @@ EXAMPLE2
 
      # Loop.
      $cui->mainloop;
+
+     # Output like:
+     # ┌ foo ───┐
+     # │▊       │
+     # └────────┘
 
 DEPENDENCIES
     Curses, Curses::UI::Common, Curses::UI::ContainerWidget,

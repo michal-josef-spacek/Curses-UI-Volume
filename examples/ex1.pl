@@ -24,3 +24,6 @@ $win->set_binding(\&exit, "\cQ", "\cC");
 
 # Loop.
 $cui->mainloop;
+
+# Output like:
+# █▌

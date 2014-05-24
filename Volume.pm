@@ -252,6 +252,9 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
  # Loop.
  $cui->mainloop;
 
+ # Output like:
+ # █▌
+
 =head1 EXAMPLE2
 
  # Pragmas.
@@ -298,6 +301,11 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
 
  # Loop.
  $cui->mainloop;
+
+ # Output like:
+ # ┌ foo ───┐
+ # │▊       │
+ # └────────┘
 
 =head1 DEPENDENCIES
 

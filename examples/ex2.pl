@@ -44,3 +44,8 @@ $cui->set_timer(
 
 # Loop.
 $cui->mainloop;
+
+# Output like:
+# ┌ foo ───┐
+# │▊       │
+# └────────┘
