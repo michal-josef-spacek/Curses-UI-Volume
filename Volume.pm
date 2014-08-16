@@ -24,7 +24,7 @@ Readonly::Scalar our $LEFT_ONE_QUARTER_BLOCK => decode_utf8('▎');
 Readonly::Scalar our $LEFT_ONE_EIGHTH_BLOCK => decode_utf8('▏');
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Constructor.
 sub new {
@@ -338,6 +338,6 @@ BSD license.
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
