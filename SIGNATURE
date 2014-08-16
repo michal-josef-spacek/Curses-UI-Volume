@@ -1,0 +1,49 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 8daea0245ca2db26768a0fa1cc1b900ae1cbccbc Changes
+SHA1 62ea8161d1cc7e68c6aa5a240b42a571037b8c51 LICENSE
+SHA1 83cae0bc0d87d1efebe22b455afc82f09a46f967 MANIFEST
+SHA1 d757aaec630bcc61dc980b1c85a6aaa4b4e758f3 META.yml
+SHA1 f4a6a23a9e7ca2e85e39fd3f7c6a60514d52d3b9 Makefile.PL
+SHA1 4e444771a20802106c16c529b12e1820af8ed466 README
+SHA1 dd3f20755df515c7897846a4cf57c49f96f4c11c Volume.pm
+SHA1 fd55a7abde68b82271f41567b6c60aaf14133990 examples/ex1.pl
+SHA1 ebc26ecebcf1bef1cfe89c0c0939dee0d9e9ff99 examples/ex2.pl
+SHA1 4f7982f7e554df23debce735ab343d88d7355140 inc/Module/Install.pm
+SHA1 c68c85ca62ae30d83f633975cd9af2a0789f59e0 inc/Module/Install/Base.pm
+SHA1 4797fd314e2653a427e725104704b0320993ba8c inc/Module/Install/Can.pm
+SHA1 b771d93af2bfc41273f48fa36082bf1bd6f21dbe inc/Module/Install/Fetch.pm
+SHA1 f4f3258a505a432a58cbcdc1fd030ef5e8e90985 inc/Module/Install/Makefile.pm
+SHA1 100a0dd8572f0b40373350fdd6c0a6f035d9dc39 inc/Module/Install/Metadata.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 4490fed943f4e556db9fd054b7ec8765ca417f7d inc/Module/Install/Win32.pm
+SHA1 8464ddf690b9f7036a0974ff172ec0ced2f6a329 inc/Module/Install/WriteAll.pm
+SHA1 7977923648836f6481a46f08c28b2b90c894ccc8 t/Curses-UI-Volume/00-use.t
+SHA1 e6ffc5d56f8bdd22699a82327d7fa893bb6ef8f9 t/Curses-UI-Volume/01-version.t
+SHA1 d349a0bb6356d6d0621d6006f01a1d4b1709a3ad t/Curses-UI-Volume/02-pod_coverage.t
+SHA1 2d7c086b1e9470975ec60e313350805051606e86 t/Curses-UI-Volume/03-pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJT78B/AAoJEAwa+cf4dLBa8HUH/3fapapa9me7gg+f6EiD/YqP
+5B28IEy3ar0b+LkerTwXrzQ9GbXrHL3fdED2wyPyrHhCuBbUvm2NgdTN0w1YfaTz
+S37M7Gjpo2u56p0jskD0LlAf+Rh7tHr7S8123BzH54bz4p1qvMMnbOAFwYYOomg5
+OrTUXWDcdCB8qLeZWhlJJJEs0chJKh00pA533P8CdssHwHuy1M0FRBo8y5uozML0
+NVwISGz8m1Ys2hfAhZ6yBYo1HFNOjRIqCvDOqZ5s42TTzWOIZSLsamO2fC4AcZ6j
+6/sBi0AI1D0kvtHsPb/IXkqg8CnqKXbyainLhj3Q7ofhBQkBkGxtmdbkZ0yGm2I=
+=moyf
+-----END PGP SIGNATURE-----
