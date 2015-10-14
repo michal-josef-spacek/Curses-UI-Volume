@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Create and manipulate volume widgets.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Curses-UI-Volume';
 readme_from 'Volume.pm';
