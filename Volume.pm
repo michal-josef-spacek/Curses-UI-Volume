@@ -24,7 +24,7 @@ Readonly::Scalar our $LEFT_ONE_QUARTER_BLOCK => decode_utf8('▎');
 Readonly::Scalar our $LEFT_ONE_EIGHTH_BLOCK => decode_utf8('▏');
 
 # Version.
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 # Constructor.
 sub new {
@@ -344,6 +344,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
