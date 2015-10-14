@@ -155,7 +155,8 @@ DEPENDENCIES
     Curses::UI::Label, Curses::UI::Widget, Encode, Readonly.
 
 SEE ALSO
-    Curses::UI, Curses::UI::Widget.
+    Task::Curses::UI
+        Install the Curses::UI modules.
 
 REPOSITORY
     <https://github.com/tupinek/Curses-UI-Volume>
