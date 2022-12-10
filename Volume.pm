@@ -225,6 +225,8 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
 
 =head1 EXAMPLE1
 
+=for comment filename=fixed_volume_50.pl
+
  use strict;
  use warnings;
 
@@ -252,6 +254,8 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
  # █▌
 
 =head1 EXAMPLE2
+
+=for comment filename=progress_example.pl
 
  use strict;
  use warnings;

@@ -1,4 +1,5 @@
 0.03
+ - Change example files to better names.
  - Fix use of Module::Install.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Update author name.
