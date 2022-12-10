@@ -1,12 +1,10 @@
 package Curses::UI::Volume;
 
-# Pragmas.
 use Curses::UI::Widget;
 use base qw(Curses::UI::ContainerWidget);
 use strict;
 use warnings;
 
-# Modules.
 use Curses;
 use Curses::UI::Common;
 use Curses::UI::Label;
@@ -227,11 +225,9 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
 
 =head1 EXAMPLE1
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Curses::UI;
 
  # Object.
@@ -257,11 +253,9 @@ L<Curses::UI::Widget|Curses::UI::Widget>.
 
 =head1 EXAMPLE2
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Curses::UI;
 
  # Object.

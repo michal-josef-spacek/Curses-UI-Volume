@@ -71,11 +71,9 @@ WIDGET-SPECIFIC METHODS
              Returns volume number (0-100%).
 
 EXAMPLE1
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Curses::UI;
 
      # Object.
@@ -100,11 +98,9 @@ EXAMPLE1
      # █▌
 
 EXAMPLE2
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Curses::UI;
 
      # Object.
