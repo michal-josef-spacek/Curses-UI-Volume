@@ -1,4 +1,5 @@
 0.03
+ - Improve LICENSE AND COPYRIGHT section in doc.
  - Update copyright years to 2022.
  - Update Module::Install to 1.19 version.
 
