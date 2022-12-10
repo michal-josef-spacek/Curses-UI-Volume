@@ -1,4 +1,5 @@
 0.03
+ - Fix use of Module::Install.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Update author name.
  - Update copyright years to 2022.
