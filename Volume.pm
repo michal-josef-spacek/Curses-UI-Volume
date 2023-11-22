@@ -327,7 +327,7 @@ Install the Curses::UI modules.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Curses-UI-Volume>
+L<https://github.com/michal-josef-spacek/Curses-UI-Volume>
 
 =head1 AUTHOR
 
